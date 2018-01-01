@@ -8,13 +8,14 @@ The end goal of this is to create a "player agent" shim bot that forwards data f
 
 ## Logic
 Startup
-  Read the hexscrapes.cfg file and dump it to a memory object
-  Read the transform.lua file and load it
+* Read the hexscrapes.cfg file and dump it to a memory object
+* Read the transform.lua file and load it
+
 Each frame
-  Scrape the hex values specified in hexscrapes.cfg and assign them to a dictionary
-  Call the transform function, passing the dictionary and a dictionary of internal state variables
-  Write the result into the gamestate.json file
-  Read values from controller1.json
-  Read values from controller2.json
-  Apply input values to the game state.
+* Scrape the hex values specified in hexscrapes.cfg and assign them to a dictionary
+* Call the transform function, passing the dictionary and a dictionary of internal state variables
+* Write the result into the gamestate.json file
+* Read values from controller1.json
+* Read values from controller2.json
+* Apply input values to the game state.
 
